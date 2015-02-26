@@ -14,10 +14,10 @@ Request.prototype.requester = function () {
 };
 
 /**
- * Get the User instance for the user who received the request
- * @returns {User} The user who received the request
+ * Get the User instance for the user who is recieving the request
+ * @returns {User} The user who recieved the request
  */
-Request.prototype.user = function() {
+Request.prototype.user = function () {
     return Meteor.users.findOne(this.userId);
 };
 
